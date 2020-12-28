@@ -1,0 +1,59 @@
+<div>
+    <button type="button" class="btn btn-outline-secondary" [routerLink]="['/room/hasused']">返回</button>
+</div>
+
+<div class="container">
+    <div class="test" *ngIf="light1=='on'||light1=='off'">
+        <img *ngIf="light1=='on'" src="../../assets/imgs/onlight.png" alt="">
+        <img *ngIf="light1=='off'" src="../../assets/imgs/offlight.png" alt="">
+        <h5 style="margin-top: 1rem;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;light1</h5>
+        <div class="btn-group" role="group" aria-label="Basic example" style="margin-top: 0.1rem;">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn btn-secondary btn btn-light" (click)="Onlight1()">Turn On</button>
+            <button type="button" class="btn btn-secondary btn btn-dark" (click)="Offlight1()">Turn Off</button>
+        </div>
+    </div>
+    <div class="test" *ngIf="light2=='on'||light2=='off'">
+        <img *ngIf="light2=='on'" src="../../assets/imgs/onlight.png" alt="">
+        <img *ngIf="light2=='off'" src="../../assets/imgs/offlight.png" alt="">
+        <h5 style="margin-top: 1rem;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;light2</h5>
+        <div class="btn-group" role="group" aria-label="Basic example" style="margin-top: 0.1rem;">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn btn-secondary btn btn-light" (click)="Onlight2()">Turn On</button>
+            <button type="button" class="btn btn-secondary btn btn-dark" (click)="Offlight2()">Turn Off</button>
+        </div>
+    </div>
+    <div class="test" *ngIf="light3=='on'||light3=='off'">
+        <img *ngIf="light3=='on'" src="../../assets/imgs/onlight.png" alt="">
+        <img *ngIf="light3=='off'" src="../../assets/imgs/offlight.png" alt="">
+        <h5 style="margin-top: 1rem;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;light3</h5>
+        <div class="btn-group" role="group" aria-label="Basic example" style="margin-top: 0.1rem;">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn btn-secondary btn btn-light" (click)="Onlight3()">Turn On</button>
+            <button type="button" class="btn btn-secondary btn btn-dark" (click)="Offlight3()">Turn Off</button>
+        </div>
+    </div>
+    <div class="test" *ngIf="AC=='on'||AC=='off'">
+        <img *ngIf="AC=='on'" src="../../assets/imgs/onAC.png" alt="">
+        <img *ngIf="AC=='off'" src="../../assets/imgs/offAC.png" alt="">
+        <h5 style="margin-top: 1rem;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AC
+        </h5>
+        <div class="btn-group" role="group" aria-label="Basic example" style="margin-top: 0.1rem;">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="button" class="btn btn-secondary btn btn-light" (click)="OnAC()">Turn On</button>
+            <button type="button" class="btn btn-secondary btn btn-dark" (click)="OffAC()">Turn Off</button>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="test" style="margin-right: 23rem;">
+        <echarts [options]="chartOption" [merge]="updateOption"></echarts>
+    </div>
+    <div class="test">
+        <echarts [options]="chartOption1" [merge]="updateOption1"></echarts>
+    </div>
+</div>

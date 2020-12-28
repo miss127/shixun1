@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "kqy": {
@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "kqy"
+    }
+  },
+  "defaultProject": "kqy",
+  "cli": {
+    "analytics": "40cecdb5-b055-455d-8008-a0bdefd9fb5a"
+  }
 }

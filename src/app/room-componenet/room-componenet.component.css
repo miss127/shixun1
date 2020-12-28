@@ -1,0 +1,21 @@
+.login-content{
+    height: 80vh;
+}
+form{
+    width: 35rem;
+}
+.page{
+    width: 100vw;
+    height: 88vh;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    padding: 0% 15% 0% 30% ;    
+    width: 20rem;
+}
+li > a{
+    font-size: 1.6rem;
+    width: 15rem;
+}

@@ -1,0 +1,17 @@
+.login-content{
+    height: 80vh;
+}
+form{
+    width: 35rem;
+}
+.login-page{
+    background: url("C:/Users/Lenovo/Desktop/作业/大三上/实训/kqy/src/assets/imgs/background1.jpg");
+    background-size: 100%;
+}
+.page{
+    width: 100vw;
+    height: 88vh;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}

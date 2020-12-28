@@ -1,0 +1,23 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col-2">#</th>
+            <th scope="col-2">房间号</th>
+            <th scope="col-2">预约用户</th>
+            <th scope="col-2">&nbsp;&nbsp;&nbsp;&nbsp;预约时间</th>
+            <th scope="col-2">&nbsp;&nbsp;&nbsp;操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let room of rooms$ | async;let i = index'>
+            <th scope="row">{{i}}</th>
+            <td>&nbsp;&nbsp;{{room.roomid}}</td>
+            <td> {{room.user}}</td>
+            <td> {{room.starttime}}:00-{{room.starttime+2}}:00</td>
+            <td>
+                <button type="button" class="btn btn-outline-danger" (click)="prepare(room.roomid)">取消预约</button>
+                <button type="button" class="btn btn-outline-success" [routerLink]="['/room'+room.roomid]">查看</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
