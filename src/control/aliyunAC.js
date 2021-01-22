@@ -13,8 +13,8 @@ const device4 = iot.device({
 
 device4.on('connect', () => {
     //将<productKey> <deviceName>修改为实际值
-    device4.subscribe('/a1eHnc6wxpv/b71e219b5998595b51202c5434fe7464/user/get'); //subscribe表示从阿里云上接收信息
-    device4.publish('/a1eHnc6wxpv/b71e219b5998595b51202c5434fe7464/user/update', 'hello world!'); //publish表示向阿里云发送消息
+    device4.subscribe('/a1eHnc6wxpv/jAiAAPaAUxbSdpadnabF/user/get'); //subscribe表示从阿里云上接收信息
+    device4.publish('/a1eHnc6wxpv/jAiAAPaAUxbSdpadnabF/user/update', 'hello world!'); //publish表示向阿里云发送消息
 });
 //监听message事件
 device4.on('message', (topic, payload) => {
